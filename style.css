@@ -1,0 +1,364 @@
+body {
+    background-color: #1a1a1a;
+    color: #ccc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #D4AF37;
+    font-weight: 600;
+}
+
+p {
+    color: #ccc;
+}
+
+.text-gold {
+    color: #ffc400;
+    transition: 0.3s;
+}
+
+a.text-gold:hover {
+    color: #ffb414;
+    text-shadow: 2px 1px 4px rgba(228, 161, 18, 0.7);
+    background-color: #222;
+}
+
+#navbar .nav-link,
+#nav .na {
+    color: #ffbe32;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar .nav-link:hover,
+#nav .na:hover {
+    color: #ffb414;
+    text-shadow: 2px 1px 4px rgba(228, 161, 18, 0.7);
+}
+
+.banner-section {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+.banner-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.blur-box {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    max-width: 700px;
+    margin-bottom: 120px;
+    position: relative;
+    z-index: 2;
+    padding: 3rem;
+}
+
+.btn-gold {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    color: #1a1a1a;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.7px;
+    transition: background-color 0.2s, box-shadow 0.2s, transform 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #C39D2F;
+    border-color: #C39D2F;
+    color: #fff;
+    box-shadow: 0 6px 8px rgba(212, 164, 69, 0.55);
+    transform: translateY(-3px) scale(1.02);
+}
+
+.btn-outline-secondary {
+    background-image: linear-gradient(to right, #6c757d, #adb5bd);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-image 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.3s;
+}
+
+.btn-outline-secondary:hover {
+    background-image: linear-gradient(to right, #5a6268, #9ca5ac);
+    border-color: #e2e6ea;
+    color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px) scale(1.02);
+}
+
+.btn-outline-light {
+    font-weight: 600;
+    border: 2px solid white;
+    color: white;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    padding: 12px 32px;
+    transition: all 0.35s ease;
+}
+
+.btn-outline-light:hover {
+    background: white;
+    color: #000;
+    transform: translateY(-3px) scale(1.04);
+}
+
+.aboutus-card,
+.service-card {
+    background: #1a1a1a;
+    border-radius: 18px;
+    padding: 25px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.aboutus-card:hover,
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: #D4AF37;
+    box-shadow: 0 0 18px rgba(212, 175, 55, 0.4);
+}
+
+.card,
+.team-card,
+.review-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.card:hover,
+.team-card:hover {
+    transform: translateY(-6px);
+    border-color: #D4AF37;
+    box-shadow: 0 0 18px rgba(212, 175, 55, 0.4);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #343a40;
+}
+
+.card-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products-section .container>.text-center .btn-gold {
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1.1em;
+}
+
+.service-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #D4AF37;
+}
+
+.team-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #D4AF37;
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+
+.bg-dark {
+    background-color: #1a1a1a !important;
+}
+
+.text-light {
+    color: #ffffff !important;
+}
+
+hr.bg-gold {
+    border-color: #D4AF37;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+.footer-card {
+    width: 150%;
+}
+
+.address {
+    transform: translateY(-100px);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.section-divider-gold {
+    border: none;
+    height: 3px;
+    background-color: #D4AF37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.75);
+    margin: 3rem 0;
+}
+
+.footer-content{
+    height: 85vh;
+}
+
+@media (max-width: 1024px) {
+    .map {
+        width: 450px;
+    }
+
+    .nav-link {
+        font-size: 20px
+    }
+}
+
+@media (width: 768px) {
+    .banner-section {
+        padding-top: 115px;
+    }
+
+    .blur-box {
+        max-width: 90%;
+    }
+
+    .map {
+        width: 350px;
+    }
+
+    .info-items {
+        display: grid;
+        grid-template-columns: auto;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    .info-cards {
+        width: 100%;
+    }
+
+    .info-img {
+        height: 450px;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    .service-card {
+        width: 200%;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    .footer-item {
+        font-size: 20px;
+    }
+
+    .footer-link {
+        font-size: 12px;
+    }
+
+    .footer-card {
+        width: 150%;
+    }
+
+    .address {
+        transform: translateY(-100px);
+    }
+}
+
+@media (max-width: 425px) {
+    .blur-box {
+        width: 400px;
+        margin-top: 50px;
+        height: 450px;
+    }
+
+    .cta-h {
+        font-size: 32px;
+    }
+
+    .cta-d {
+        font-size: 10px;
+    }
+
+    .map {
+        width: 400px;
+    }
+}
+
+@media (max-width: 375px) {
+    .map {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .blur-box {
+        max-width: 95%;
+    }
+
+    .cta-h {
+        font-size: 22px;
+    }
+
+    .cta-d {
+        font-size: 16px;
+    }
+
+    .cta-b {
+        font-size: 14px;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .map {
+        width: 250px;
+    }
+}
